@@ -12,8 +12,9 @@ export class NavBarComponent {
   isMenuOpen = true;
 
   navLinks = [
-    { path: '/projects', label: 'Projects' },
     { path: '/experience', label: 'Experience' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/contact', label: 'Contact' },
   ];
 
   toggleMenu() {

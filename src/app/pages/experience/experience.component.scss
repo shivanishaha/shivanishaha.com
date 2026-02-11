@@ -1,0 +1,92 @@
+// Color Palette
+$color-dark-purple: #574964;
+$color-muted-rose: #9F8383;
+$color-soft-taupe: #C8AAAA;
+$color-pale-peach: #FFDAB3;
+$text-white: #fdfdfd;
+
+:host {
+  display: block;
+  background-color: $color-dark-purple; // Sets the dark background for the whole page section
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.experience-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  .section-title {
+    font-size: 2rem;
+    color: $color-pale-peach; // Peach stands out beautifully against the dark purple
+    margin-bottom: 3rem;
+    font-family: 'Courier New', Courier, monospace; // Matching your image's mono style
+    border-bottom: 2px solid $color-muted-rose;
+    display: inline-block;
+  }
+}
+
+.experience-card {
+  background: rgba($text-white, 0.95); // Slightly off-white/cream for better readability
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 8px 8px 0px $color-muted-rose; // Retro block shadow style
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px $color-pale-peach;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($color-dark-purple, 0.1);
+    
+
+    .role {
+      font-size: 1.5rem;
+      color: $color-dark-purple;
+      font-weight: bold;
+    }
+
+    .period {
+      font-size: 0.9rem;
+      color: $color-muted-rose;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .company {
+    color: $color-muted-rose;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .description-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $color-pale-peach;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+    }
+  }
+}
