@@ -21,7 +21,7 @@ echo "Deployment to shivanishaha.com successful at $(date)"
 NOTIFY_EMAIL="amaykadakia@gmail.com,shivani24.shaha@gmail.com"
 
 DEPLOY_TIME=$(date)
-echo "Deployment to shivanishaha.com was successful at $DEPLOY_TIME." \
+echo "Deployment to shivanishaha.com was successful at $DEPLOY_TIME. This is an automated notification" \
   | mail -s "✅ Deploy Successful – shivanishaha.com" $NOTIFY_EMAIL
 
 echo "Deployment to shiavanishaha.com successful and API activated at $DEPLOY_TIME"
