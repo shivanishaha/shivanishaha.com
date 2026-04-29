@@ -17,3 +17,11 @@ sudo cp -r dist/shivanishaha.com/browser/* /var/www/shivanishaha.com/public_html
 sudo chown -R www-data:www-data /var/www/shivanishaha.com/
 
 echo "Deployment to shivanishaha.com successful at $(date)"
+
+NOTIFY_EMAIL="amaykadakia@gmail.com,shivani24.shaha@gmail.com"
+
+DEPLOY_TIME=$(date)
+echo "Deployment to shivanishaha.com was successful at $DEPLOY_TIME." \
+  | mail -s "✅ Deploy Successful – shivanishaha.com" $NOTIFY_EMAIL
+
+echo "Deployment to shiavanishaha.com successful and API activated at $DEPLOY_TIME"
